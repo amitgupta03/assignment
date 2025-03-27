@@ -1,0 +1,12 @@
+<mat-card class="example-form">
+    <mat-list>
+      <mat-list-item *ngFor="let todo of (todos$ | async)">
+        <mat-checkbox [checked]="todo.completed" (change)="toggleTodo(todo.id)">
+          <span [ngClass]="{ 'completed': todo.completed }">
+            {{ todo.description }} {{ todo.completed ? '(completed)' : '' }}
+          </span>
+        </mat-checkbox>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+  

@@ -1,0 +1,10 @@
+<mat-card class="card">
+    <form [formGroup]="todoForm" (ngSubmit)="onSubmit()" class="todo-form">
+      <mat-form-field class="full-width">
+        <mat-label>Todo Description</mat-label>
+        <textarea matInput formControlName="description"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="todoForm.invalid">Add Todo</button>
+    </form>
+  </mat-card>
+  

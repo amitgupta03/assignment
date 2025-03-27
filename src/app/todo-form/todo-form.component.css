@@ -1,0 +1,14 @@
+.card{
+    padding: 1.5rem;
+   
+}
+
+.todo-form{
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: max-content;
+    align-self: flex-end;
+  }
